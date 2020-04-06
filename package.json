@@ -1,0 +1,24 @@
+{
+  "name": "image-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client\""
+  },
+  "author": "congdv",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "uuid": "^7.0.2"
+  }
+}
